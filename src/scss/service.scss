@@ -1,0 +1,151 @@
+// *{
+// 	border: 1px solid red;
+// }
+@media (min-width: 1440px) {
+	.body{
+		display: flex;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	.main{
+		flex-grow:1;
+
+
+	}
+	.menu{
+		display: flex;
+		width: 320px;
+	}
+
+}
+.title{
+	font-size: 28px;
+
+	line-height: 40px;
+	color:$black;
+	position: relative;
+
+	margin: 0;
+
+}
+.title::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -32px;
+	display: block;
+	width: 4px;
+	height: 100%;
+	background-color: $sky;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.main{
+	background-color: $gray;
+}
+.services{
+	padding: 24px 32px 0 32px;
+
+}
+.services__top{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.services__buttons{
+	display: flex;
+	
+}
+.services__order::before,
+.services__status::before{
+	content:"Оставить заявку";
+	position: absolute;
+	top: 50%;
+	left: -130px;
+	transform:translateY(-50%);
+	font-size: 16px;
+
+}
+.services__order,
+.services__status{
+	margin-left: 160px;
+
+}
+.services__status::before{
+	content:"Статус ремонта";
+}
+.services__list{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	// justify-content: space-between;
+	flex-wrap:wrap;
+	
+	
+
+
+}
+
+.services__link{
+	border: 2px solid transparent;
+	margin: 0;
+	padding: 0;
+	padding: 8px  11px;
+	// margin-left: 19px;
+	text-decoration: none;
+	color: $ligntblack;
+	letter-spacing: -0.2px;
+	// border: 1px solid black;
+	text-align: center;
+}
+
+.services__link:hover{
+
+	color: $ligntblack;
+
+}
+.services__el{
+	margin: 0;
+	margin-top: 25px;
+
+}
+.about-us{
+	// position: relative;
+	// z-index: 2;
+
+}
+.about-us__container{
+	float:right;
+	max-width: 50%;
+	min-width: 250px;
+}
+.about-us__img{
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+}
+.about-us__text{
+	// 	position: relative;
+	// z-index: 2;
+}
+.clearfix{
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+}
+@media (max-width: 768px) {
+	// .about-us__container{
+	// position: absolute;
+	// top: 50%;
+	// left: 50%;
+	// width: 100%;
+	// height: 100%;
+	// z-index: 1;
+	// transform:translate(-50%,-50%)
+	// }
+	
+
+}

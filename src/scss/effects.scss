@@ -1,0 +1,14 @@
+.menu{display: none;}
+.menu.active{
+	display: block;
+}
+@media (min-width: 1440px) {
+.menu{
+	display: block;
+}
+}
+.services__link.active{
+	background-color: $white;
+	border: 2px solid $lightsky;
+	border-radius: 6px;
+}
